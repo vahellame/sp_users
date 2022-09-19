@@ -14,19 +14,19 @@ class UNetworkImage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Site protected by
+    // Site protected by CloudFlare
     return WebView(
       backgroundColor: Colors.grey,
       initialUrl: imageUrl,
     );
-    return CachedNetworkImage(
-      imageUrl: imageUrl,
-      fit: fit,
-      placeholder: (context, url) => const UPreloader(),
-      errorWidget: (context, url, error) => const Icon(
-        Icons.error,
-        color: Colors.white,
-      ),
-    );
+    // return CachedNetworkImage(
+    //   imageUrl: imageUrl,
+    //   fit: fit,
+    //   placeholder: (context, url) => const UPreloader(),
+    //   errorWidget: (context, url, error) => const Icon(
+    //     Icons.error,
+    //     color: Colors.white,
+    //   ),
+    // );
   }
 }
