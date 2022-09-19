@@ -1,38 +1,114 @@
 name: sp_users
 description: A new Flutter project.
 
-publish_to: 'none'
-
+publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.0 <3.0.0'
+  sdk: ">=2.17.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  intl: ^0.17.0
-  intl_utils: ^2.7.0
-  flutter_bloc: ^8.1.1
-  equatable: ^2.0.5
-  vrouter: ^1.2.1
-  http: ^0.13.5
-  get_it: ^7.2.0
-  freezed_annotation: ^2.1.0
+  auto_route: ^5.0.1
+  retrofit: ^3.0.1+1
   json_annotation: ^4.6.0
+  freezed_annotation: ^2.1.0
+  fpdart: ^0.2.0
+  dio_cache_interceptor: ^3.3.1
+  path_provider: ^2.0.11
+  flutter_riverpod: ^1.0.4
+  dio_cache_interceptor_hive_store: ^3.2.0
+  flutter_feather_icons: ^2.0.0+1
+  form_field_validator: ^1.1.0
+  url_launcher: ^6.1.5
+  maps_launcher: ^2.0.1
+  cached_network_image: ^3.2.2
+  dio: ^4.0.6
+  webview_flutter: ^3.0.4
 
 dev_dependencies:
   flutter_lints: ^2.0.1
+  auto_route_generator: ^5.0.2
   build_runner: ^2.2.1
-  freezed: ^2.1.0+1
+  retrofit_generator: ^4.0.3+2
   json_serializable: ^6.3.2
+  freezed: ^2.1.0+1
+  dart_code_metrics: ^4.18.3
+  index_generator: ^3.3.2
+  i18n: ^3.4.1
+
+index_generator:
+  exclude:
+    - "**.g.dart"
+    - "**.gr.dart"
+    - "**.freezed.dart"
+    - initializer.config.dart
+  indexes:
+    - path: lib/app
+
+    - path: lib/core/domain
+    - path: lib/core/infrastructure
+    - path: lib/core/presentation
+
+    - path: lib/modules/user/domain
+    - path: lib/modules/user/infrastructure
+    - path: lib/modules/user/presentation
+
+    - path: lib/modules/photo/domain
+    - path: lib/modules/photo/infrastructure
+    - path: lib/modules/photo/presentation
+
+    - path: lib/modules/post/domain
+    - path: lib/modules/post/infrastructure
+    - path: lib/modules/post/presentation
 
 flutter:
   uses-material-design: true
 
-flutter_intl:
-  enabled: true
-  arb_dir: lib/common/l10n
-  output_dir: lib/common/l10n/generated
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/nunito/Nunito-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/nunito/Nunito-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+
+        - asset: assets/fonts/nunito/Nunito-Light.ttf
+          weight: 300
+        - asset: assets/fonts/nunito/Nunito-LightItalic.ttf
+          weight: 300
+          style: italic
+
+        - asset: assets/fonts/nunito/Nunito-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/nunito/Nunito-Italic.ttf
+          weight: 400
+          style: italic
+
+        - asset: assets/fonts/nunito/Nunito-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/nunito/Nunito-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+
+        - asset: assets/fonts/nunito/Nunito-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/nunito/Nunito-BoldItalic.ttf
+          weight: 700
+          style: italic
+
+        - asset: assets/fonts/nunito/Nunito-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/nunito/Nunito-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+
+        - asset: assets/fonts/nunito/Nunito-Black.ttf
+          weight: 900
+        - asset: assets/fonts/nunito/Nunito-Black.ttf
+          weight: 900
+          style: italic

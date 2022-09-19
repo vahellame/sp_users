@@ -1,0 +1,26 @@
+users: "Users"
+profile: "Profile"
+email: "E-mail"
+phone: "Phone"
+website: "Website"
+company: "Company"
+address: "Address"
+
+albums: "Albums"
+album: "Album"
+
+photos: "Photos"
+photo: "Photo"
+
+posts: "Posts"
+post: "Post"
+comments: "Comments"
+comment: "Comment"
+createComment: "Create comment"
+
+name: "Name"
+writeText: "Write text..."
+send: "Send"
+
+requiredInput: "Required input"
+invalidEmail: "Invalid e-mail"

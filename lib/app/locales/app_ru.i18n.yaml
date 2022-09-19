@@ -1,0 +1,26 @@
+users: "Пользователи"
+profile: "Профиль"
+email: "E-mail"
+phone: "Телефон"
+website: "Веб-сайт"
+company: "Компания"
+address: "Адрес"
+
+albums: "Альбомы"
+album: "Альбом"
+
+photos: "Фотографии"
+photo: "Фотография"
+
+posts: "Публикации"
+post: "Публикация"
+comments: "Комментарии"
+comment: "Комментарий"
+createComment: "Создать комментарий"
+
+name: "Имя"
+writeText: "Введите текст..."
+send: "Отправить"
+
+requiredInput: "Обязательно для заполнения"
+invalidEmail: "Некорректный e-mail"

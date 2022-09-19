@@ -1,36 +1,15 @@
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:get_it/get_it.dart';
-import 'package:sp_users/common/l10n/generated/l10n.dart';
-import 'package:sp_users/common/theme.dart';
-import 'package:sp_users/quiz/route.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:vrouter/vrouter.dart';
+// GENERATED CODE - DO NOT MODIFY BY HAND
 
-class SPUsersApp extends StatelessWidget {
-  const SPUsersApp({Key? key}) : super(key: key);
+library app;
 
-  @override
-  Widget build(BuildContext context) {
-    return VRouter(
-      theme: ThemeData(
-        unselectedWidgetColor: Theme.of(context).firstColor,
-        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Theme.of(context).firstColor),
-      ),
-      useInheritedMediaQuery: true,
-      debugShowCheckedModeBanner: false,
-      initialUrl: QuizRoute.usersPreview,
-      mode: VRouterMode.history,
-      supportedLocales: S.delegate.supportedLocales,
-      localizationsDelegates: const [
-        S.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      routes: [
-        QuizRoute(),
-      ],
-    );
-  }
-}
+export 'application.dart';
+export 'locales/app.i18n.dart';
+export 'locales/app_ru.i18n.dart';
+export 'pages/photo/album_list_page.dart';
+export 'pages/photo/album_page.dart';
+export 'pages/photo/photo_list_page.dart';
+export 'pages/post/post_list_page.dart';
+export 'pages/post/post_page.dart';
+export 'pages/user/user_list_page.dart';
+export 'pages/user/user_page.dart';
+export 'router.dart';
