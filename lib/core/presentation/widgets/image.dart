@@ -15,9 +15,12 @@ class UNetworkImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Site protected by CloudFlare
-    return WebView(
-      backgroundColor: Colors.grey,
-      initialUrl: imageUrl,
+    return Transform.scale(
+      scale: 1.1,
+      child: WebView(
+        backgroundColor: Colors.grey,
+        initialUrl: imageUrl,
+      ),
     );
     // return CachedNetworkImage(
     //   imageUrl: imageUrl,
